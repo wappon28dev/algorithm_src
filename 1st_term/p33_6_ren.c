@@ -7,16 +7,16 @@ int main(void) {
     char arrayChar[] = {'1','2','3'};
     int asciiNum = 0x41;
 
-    printf("%c¥n", singleChar);
-    printf("%d¥n", singleChar);
-    printf("%s¥n", arrayChar);
-    printf("%d¥n", asciiNum);
-    printf("%c¥n", asciiNum);
+    printf("%c\n", singleChar);
+    printf("%d\n", singleChar);
+    printf("%s\n", arrayChar);
+    printf("%d\n", asciiNum);
+    printf("%c\n", asciiNum);
 
     //ren
-    printf("¥n");
+    printf("\n");
     putchar(singleChar);
-    printf("¥n");
+    printf("\n");
     puts(arrayChar);
     putchar(asciiNum);
 
@@ -26,7 +26,7 @@ int main(void) {
 
 
 /*
-出力 : 
+�o�� : 
 
     A
     65

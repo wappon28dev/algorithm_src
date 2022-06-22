@@ -16,7 +16,7 @@ int main(void) {
         for (c = 0; c <= a; c++){ 
             printf("*");
         }
-        printf("Â¥n");
+        printf("\n");
     }
 
     a = 0; b = 0;
@@ -25,7 +25,7 @@ int main(void) {
         for (b = 0; b < (loopingNum - a); b++){ 
             printf("*");
         }
-        printf("Â¥n");
+        printf("\n");
     }
 
     
@@ -35,7 +35,7 @@ int main(void) {
 }
 
 /*
-å‡ºåŠ› : 
+o—Í : 
 
       *
      ***

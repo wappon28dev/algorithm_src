@@ -7,7 +7,7 @@ int main(void) {
     int r = 5;
     float s = PI * r * r;
 
-    printf("å††ã®é¢ç©s = %.3f", s);
+    printf("‰~‚Ì–ÊÏs = %.3f", s);
 
     return 0;
 
@@ -15,8 +15,8 @@ int main(void) {
 
 
 /*
-å‡ºåŠ› : 
+o—Í : 
 
-   å††ã®é¢ç©s = 78.540
+   ‰~‚Ì–ÊÏs = 78.540
 
 */

@@ -10,7 +10,7 @@ int main(void) {
         for(j = 1; j <= 2 * i - 1; j++){ // j = 1, 3, 5
             printf("*");
         }
-        printf("Â¥n");
+        printf("\n");
     }
 
     return 0;
@@ -19,7 +19,7 @@ int main(void) {
 
 
 /*
-å‡ºåŠ› : 
+o—Í : 
 
     *
     ***

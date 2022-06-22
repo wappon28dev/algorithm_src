@@ -7,12 +7,12 @@ int main(void) {
     int age;
     int fee;
 
-    printf("å¹´é½¢ã‚’å…¥åŠ› > "); scanf("%d", &age);
+    printf("”N—î‚ð“ü—Í > "); scanf("%d", &age);
     
     if (age < 6){
 
         int withParent;
-        printf("åŒä¼´è€…ã¯ã„ã¾ã™ã‹ï¼Ÿ (ã„ã‚‹ : 0, ã„ãªã„ : 1) > ");
+        printf("“¯”ºŽÒ‚Í‚¢‚Ü‚·‚©H (‚¢‚é : 0, ‚¢‚È‚¢ : 1) > ");
         scanf("%d", &withParent);
         if (withParent == 0){
             fee = adultFee / 2;
@@ -26,7 +26,7 @@ int main(void) {
         fee = adultFee;
     }
 
-    printf("æ–™é‡‘ã¯, %då††ã§ã™", fee);
+    printf("—¿‹à‚Í, %d‰~‚Å‚·", fee);
 
     return 0;
 
@@ -34,12 +34,12 @@ int main(void) {
 
 
 /*
-å…¥åŠ›ï¼š
+“ü—ÍF
 
-    å¹´é½¢ã‚’å…¥åŠ› > 12
+    ”N—î‚ð“ü—Í > 12
 
-å‡ºåŠ› : 
+o—Í : 
 
-    æ–™é‡‘ã¯, 200å††ã§ã™
+    —¿‹à‚Í, 200‰~‚Å‚·
 
 */

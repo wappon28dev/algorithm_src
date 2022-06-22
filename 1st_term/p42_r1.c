@@ -10,7 +10,7 @@ int getRandom(){
 
 int waitAnswer(){
     int num;
-    printf("どーんな数でしょ？？？ (0 - 9) > ");
+    printf("�ǁ[��Ȑ��ł���H�H�H (0 - 9) > ");
     scanf("%d", &num);
     return num;
 }
@@ -22,13 +22,13 @@ int main(void) {
 
     if (num >= 0 && num <=9){
         if(num == answer){
-            printf("あたり!!!  今日の運勢は晴れ☆¥n");
+            printf("������!!!  �����̉^���͐��ꁙ\n");
         } else {
-            printf("はずれ...¥n");
-            printf("ちなみに答えは %d です (笑) ", answer);
+            printf("�͂���...\n");
+            printf("���Ȃ݂ɓ����� %d �ł� (��) ", answer);
         }
     } else {
-        printf("正しい値を言え!!! ¥n出直しだ!!! ¥n¥n");
+        printf("�������l������!!! \n�o������!!! \n\n");
         main();
     }
 
@@ -39,13 +39,13 @@ int main(void) {
 
 
 /*
-入力 :
+���� :
 
-    どーんな数でしょ？？？ (0 - 9) > 1
+    �ǁ[��Ȑ��ł���H�H�H (0 - 9) > 1
 
-出力 : 
+�o�� : 
 
-    はずれ...
-    ちなみに答えは 0 です (笑)
+    �͂���...
+    ���Ȃ݂ɓ����� 0 �ł� (��)
 
 */

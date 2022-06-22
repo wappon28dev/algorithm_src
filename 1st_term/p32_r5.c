@@ -1,4 +1,4 @@
-// p32_r5: calculate value of sin30Â°, cos30Â°
+// p32_r5: calculate value of sin30‹, cos30‹
 #include <stdio.h>
 #include <math.h>
 #define PI 3.141592
@@ -9,8 +9,8 @@ int main(void) {
     double sinAngle = sin(angle * PI / 180);
     double cosAngle = cos(angle * PI / 180);
 
-    printf("sin(%.0fÂ°) = %.4f Â¥n", angle, sinAngle);
-    printf("cos(%.0fÂ°) = %.4f Â¥n", angle, cosAngle);
+    printf("sin(%.0f‹) = %.4f \n", angle, sinAngle);
+    printf("cos(%.0f‹) = %.4f \n", angle, cosAngle);
 
     return 0;
 
@@ -18,9 +18,9 @@ int main(void) {
 
 
 /*
-å‡ºåŠ› : 
+o—Í : 
 
-    sin(30Â°) = 0.5000
-    cos(30Â°) = 0.8660
+    sin(30‹) = 0.5000
+    cos(30‹) = 0.8660
 
 */

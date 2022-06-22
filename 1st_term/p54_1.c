@@ -6,14 +6,14 @@ int main(void) {
     
     double a, b, c;
     
-    printf("ä¸‰è§’å½¢ã®1è¾ºaã‚’å…¥åŠ›  > "); scanf("%lf", &a);
-    printf("ãã®ä»–ã®1è¾ºbã‚’å…¥åŠ›  > "); scanf("%lf", &b);
-    printf("æ®‹ã‚Šã®1è¾ºcã‚’å…¥åŠ›    > "); scanf("%lf", &c);
+    printf("ŽOŠpŒ`‚Ì1•Óa‚ð“ü—Í  > "); scanf("%lf", &a);
+    printf("‚»‚Ì‘¼‚Ì1•Ób‚ð“ü—Í  > "); scanf("%lf", &b);
+    printf("Žc‚è‚Ì1•Óc‚ð“ü—Í    > "); scanf("%lf", &c);
 
     double s = (a + b + c)/2.0;
     double square = sqrt(s * (s - a) * (s - b) * (s - c));
 
-    printf("ä¸‰è§’å½¢ã®é¢ç©ï¼š %f", square);
+    printf("ŽOŠpŒ`‚Ì–ÊÏF %f", square);
 
     return 0;
 
@@ -21,14 +21,14 @@ int main(void) {
 
 
 /*
-å…¥åŠ› :
+“ü—Í :
 
-    ä¸‰è§’å½¢ã®1è¾ºaã‚’å…¥åŠ›  > 3
-    ãã®ä»–ã®1è¾ºbã‚’å…¥åŠ›  > 4
-    æ®‹ã‚Šã®1è¾ºcã‚’å…¥åŠ›    > 5
+    ŽOŠpŒ`‚Ì1•Óa‚ð“ü—Í  > 3
+    ‚»‚Ì‘¼‚Ì1•Ób‚ð“ü—Í  > 4
+    Žc‚è‚Ì1•Óc‚ð“ü—Í    > 5
 
-å‡ºåŠ› : 
+o—Í : 
 
-    ä¸‰è§’å½¢ã®é¢ç©ï¼š 6.000000
+    ŽOŠpŒ`‚Ì–ÊÏF 6.000000
     
 */

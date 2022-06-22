@@ -13,7 +13,7 @@ int main(void) {
         for (j = 0; j <= i; j++){ // j = 0, 1, 2, 3
             printf("*");
         }
-        printf("Â¥n");
+        printf("\n");
     }
 
     return 0;
@@ -22,7 +22,7 @@ int main(void) {
 
 
 /*
-å‡ºåŠ› : 
+o—Í : 
 
     *
     ***

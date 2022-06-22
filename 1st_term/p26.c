@@ -3,9 +3,9 @@
 
 int main(void) {
 
-    printf("Hello WorldÂ¥n");
+    printf("Hello World\n");
     printf("C language");
-    printf("ProgramÂ¥n");
+    printf("Program\n");
 
     return 0;
     
@@ -13,7 +13,7 @@ int main(void) {
 
 
 /*
-?o???F
+o—ÍF
 
     Hello World
     C languageProgram

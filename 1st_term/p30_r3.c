@@ -9,8 +9,8 @@ int main(void) {
     float averageWithInt = sum / n;
     float averageWithFloat = (float)sum / (float)n;
     
-    printf("int  型での平均値 : %f¥n", averageWithInt);
-    printf("float型での平均値 : %f¥n", averageWithFloat);
+    printf("int  �^�ł̕��ϒl : %f\n", averageWithInt);
+    printf("float�^�ł̕��ϒl : %f\n", averageWithFloat);
 
     return 0;
 
@@ -18,9 +18,9 @@ int main(void) {
 
 
 /*
-出力 : 
+�o�� : 
 
-    int  型での平均値 : 2.000000
-    float型での平均値 : 2.500000
+    int  �^�ł̕��ϒl : 2.000000
+    float�^�ł̕��ϒl : 2.500000
 
 */

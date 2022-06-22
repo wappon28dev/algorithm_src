@@ -8,7 +8,7 @@ int main(void) {
     
     int s = x * y;
     
-    printf("é¢ç©s = %d", s);
+    printf("–ÊÏs = %d", s);
 
     return 0;
     
@@ -16,8 +16,8 @@ int main(void) {
 
 
 /*
-?o?? ?F
+o—ÍF
 
-    ????s = 250
+    –ÊÏs = 250
 
 */
