@@ -1,43 +1,43 @@
-// p84_2: Array test 
 #include <stdio.h>
 #include <string.h>
 
-int main(void) {
+int main(void)
+{
 
     int personNum = 5;
     int subjectLength = 3;
-    int personData[personNum][subjectLength];
-    int personDataSum[personNum];
+    int personData[5][3];
+    int personDataSum[5];
 
-    char *subjectNames[3] = { "英語" , "国語" , "数学" };
+    char *subjectNames[3] = {"英語", "国語", "数学"};
 
     int i, j;
-    for (i = 0; i < personNum; i++){
+    for (i = 0; i < personNum; i++)
+    {
         printf(" -- %d人目 -- \n", i + 1);
 
-        for (j = 0; j < subjectLength; j++){
+        for (j = 0; j < subjectLength; j++)
+        {
             printf("%sの点数 > ", subjectNames[j]);
             scanf("%d", &personData[i][j]);
             personDataSum[i] += personData[i][j];
         }
-
     }
 
     printf("\n--------------------\n");
     i = 0;
-    for (i = 0; i < personNum; i++){
+    for (i = 0; i < personNum; i++)
+    {
         printf(" -- %d人目 -- \n", i + 1);
         printf("合計: %4.0d 点\n", personDataSum[i]);
         printf("平均: %3.1f 点\n", (float)personDataSum[i] / subjectLength);
     }
 
-
     return 0;
-
 }
 
 /*
-出力 : 
+出力 :
 
     -- 1人目 --
     英語の点数 > 15
