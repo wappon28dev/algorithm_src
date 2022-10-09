@@ -2,7 +2,6 @@
 
 int main(void)
 {
-
     int targetPage = 30;
     int donePage[99];
     int donePageSum = 0;

@@ -3,7 +3,6 @@
 
 int main(void)
 {
-
     int length = 10;
 
     int array[10];

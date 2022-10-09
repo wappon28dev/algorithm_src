@@ -3,7 +3,6 @@
 
 int main(void)
 {
-
     int personNum = 5;
     int subjectLength = 3;
     int personData[5][3];

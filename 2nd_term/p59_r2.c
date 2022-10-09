@@ -3,7 +3,6 @@
 
 int main(void)
 {
-
     int page[N];
     int sum = 0;
 
