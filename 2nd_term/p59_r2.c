@@ -1,14 +1,14 @@
+// p58_r2: Array test 
 #include <stdio.h>
 #define N 5
 
-int main(void)
-{
+int main(void) {
+
     int page[N];
     int sum = 0;
-
+    
     int i;
-    for (i = 0; i < N; i++)
-    {
+    for(i = 0; i < N; i++){
         printf("%d日目: ページ数 > ", i + 1);
         scanf("%d", &page[i]);
 
@@ -20,10 +20,11 @@ int main(void)
     printf("平均: %3.1f [枚/日]\n", (float)sum / N);
 
     return 0;
+
 }
 
 /*
-出力 :
+出力 : 
 
     1日目: ページ数 > 1
     2日目: ページ数 > 5

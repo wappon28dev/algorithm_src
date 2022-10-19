@@ -1,35 +1,35 @@
-// p84_1: Array test
+// p84_1: Array test 
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
+
     int length = 10;
 
-    int array[10];
+    int array[length];
     int maxIndex = 0;
     int maxValue = 0;
 
     int i;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++){
         printf("array[%d] > ", i);
         scanf("%d", &array[i]);
-
-        if (array[i] > maxValue)
-        {
+    
+        if (array[i] > maxValue){
             maxIndex = i;
             maxValue = array[i];
         }
+
     }
 
     printf("--------------------\n");
     printf("Å‘å’l: array[%d] = %d\n", maxIndex, maxValue);
 
     return 0;
+
 }
 
 /*
-o—Í :
+o—Í : 
 
     array[0] > 5
     array[1] > 46
