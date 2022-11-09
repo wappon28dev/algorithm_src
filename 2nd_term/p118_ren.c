@@ -25,12 +25,24 @@ void initList()
 
 void printList(int i)
 {
-    while (i != 0)
+    // int j = 1;
+    // while (i != 0)
+    // {
+    //     if (j == 4)
+    //     {
+    //         printf("%c\n", Data[i].character);
+    //         break;
+    //     }
+    //     i = Data[i].nextIndex;
+    //     j++;
+    // }
+
+    int j;
+    for (j = 0; j < (4 - 1); j++)
     {
-        printf("%c", Data[i].character);
         i = Data[i].nextIndex;
     }
-    printf("\n");
+    printf("%c\n", Data[i].character);
 }
 
 void addList(char c)
@@ -65,7 +77,7 @@ int main(void)
 /*
 o—Í:
 
-    ABCDE
-    ABCDEYZ
+    D
+    D
 
 */
