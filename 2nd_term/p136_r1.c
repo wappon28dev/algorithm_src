@@ -79,7 +79,7 @@ void deleteList(int n)
     }
     int nextRefIndex = Data[i].nextIndex;
 
-    Data[nextRefIndex].character = '\r';
+    Data[nextRefIndex].character = '\0';
 }
 
 int main(void)
