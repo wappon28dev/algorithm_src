@@ -1,59 +1,54 @@
 #include <stdio.h>
-#include <string.h>
-
+#define HW 6
 int main(void)
 {
-    char character[5][5] = {
-        {'*', ' ', ' ', ' ', '*'},
-        {'*', '*', ' ', '*', '*'},
-        {'*', ' ', '*', ' ', '*'},
-        {'*', ' ', ' ', ' ', '*'},
-        {'*', ' ', ' ', ' ', '*'},
+    char c[6][6] = {
+        {' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', '*', '*', '*', '*', '*'},
+        {' ', '*', '*', '*', '*', ' '},
+        {' ', '*', '*', '*', ' ', ' '},
+        {' ', '*', '*', ' ', ' ', ' '},
+        {' ', '*', ' ', ' ', ' ', ' '},
     };
 
-    int length = 5;
-
-    printf("\noriginal: \n");
+    char ch[6][6];
     int i, j;
-    for (i = 0; i < length; i++)
+
+    for (i = 1; i <= 5; i++)
     {
-        for (j = 0; j < length; j++)
+        for (j = 1; j <= 5; j++)
         {
-            printf("%c ", character[i][j]);
+            printf("%2c", c[i][j]);
         }
         printf("\n");
     }
-
-    printf("\nturned 90 deg: \n");
-    for (i = 0; i < length; i++)
+    printf("\n");
+    for (i = 1; i <= 5; i++)
     {
-        for (j = 0; j < length; j++)
+        for (j = 1; j <= 5; j++)
         {
-            printf("%c ", character[j][i]);
+            printf("%2c", c[j][HW - i]);
         }
         printf("\n");
     }
-
-    printf("\nturned 180 deg: \n");
-    for (i = 0; i < length; i++)
+    printf("\n");
+    for (i = 1; i <= 5; i++)
     {
-        for (j = 0; j < length; j++)
+        for (j = 1; j <= 5; j++)
         {
-            printf("%c ", character[(length - 2) - (i - 1)][j]);
+            printf("%2c", c[HW - i][HW - j]);
         }
         printf("\n");
     }
-
-    printf("\nturned 270 deg: \n");
-    for (i = 0; i < length; i++)
+    printf("\n");
+    for (i = 1; i <= 5; i++)
     {
-        for (j = 0; j < length; j++)
+        for (j = 1; j <= 5; j++)
         {
-            printf("%c ", character[(length - 2) - (j - 1)][i]);
+            printf("%2c", c[HW - j][i]);
         }
         printf("\n");
     }
-
     printf("\n");
 
     return 0;
@@ -62,32 +57,28 @@ int main(void)
 /*
 o—Í :
 
-    original:
-    *       *
-    * *   * *
-    *   *   *
-    *       *
-    *       *
-
-    turned 90 deg:
     * * * * *
-      *
-        *
-      *
+    * * * *
+    * * *
+    * *
+    *
+
+    *
+    * *
+    * * *
+    * * * *
     * * * * *
 
-    turned 180 deg:
-    *       *
-    *       *
-    *   *   *
-    * *   * *
-    *       *
+            *
+        * *
+        * * *
+    * * * *
+    * * * * *
 
-    turned 270 deg:
     * * * * *
-          *
-        *
-          *
-    * * * * *
+    * * * *
+        * * *
+        * *
+            *
 
 */
