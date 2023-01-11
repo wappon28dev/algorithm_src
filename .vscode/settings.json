@@ -1,3 +1,7 @@
 {
-    "files.encoding": "shiftjis"
+    "files.encoding": "shiftjis",
+    "files.associations": {
+        "*.tcc": "c",
+        "type_traits": "c"
+    }
 }

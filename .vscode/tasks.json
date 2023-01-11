@@ -2,14 +2,14 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc アクティブなファイルのビルド",
-            "command": "/usr/bin/gcc",
+            "label": "C/C++: gcc.exe アクティブなファイルのビルド",
+            "command": "C:\\Users\\j2b27\\Documents\\programs\\gcc\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${workspaceRoot}\\out\\a.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
