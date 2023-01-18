@@ -1,35 +1,21 @@
 #include <stdio.h>
-#define N 10
+#define STACK_SIZE 3
 
 void Push(char c);
 char Pop(void);
 int DumpStack(void);
 
-char Stack[N];
+char Stack[STACK_SIZE];
 int Sp = 0;
 
-// over or under flow test (max: 10)
+// over or under flow test (Maximum Stack Size: 3)
 int main(void)
 {
     Push('A');
     Push('B');
     Push('C');
     Push('D');
-    Push('E');
-    Push('F');
-    Push('G');
-    Push('H');
-    Push('I');
-    Push('J');
-    Push('K');
 
-    Pop();
-    Pop();
-    Pop();
-    Pop();
-    Pop();
-    Pop();
-    Pop();
     Pop();
     Pop();
     Pop();
@@ -42,14 +28,15 @@ void Push(char c)
 {
     DumpStack();
 
-    if (Sp < N)
+    if (Sp < STACK_SIZE)
     {
         Stack[Sp] = c;
         Sp++;
     }
     else
     {
-        printf("Overflow\n");
+        printf("== Stack Overflow !! ==\n");
+        printf("Maximum Stack Size: %d\n", STACK_SIZE);
     }
 }
 
@@ -64,7 +51,7 @@ char Pop(void)
     }
     else
     {
-        printf("Underflow\n");
+        printf("== Stack Underflow !! ==\n");
     }
 }
 
