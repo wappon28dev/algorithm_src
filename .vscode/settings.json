@@ -2,6 +2,7 @@
     "files.encoding": "shiftjis",
     "files.associations": {
         "*.tcc": "c",
-        "type_traits": "c"
+        "type_traits": "c",
+        "cstdlib": "c"
     }
 }
