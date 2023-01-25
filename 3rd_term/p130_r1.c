@@ -1,3 +1,11 @@
+/*
+
+    例題1: スタックに文字を格納する
+      文字を格納できるスタックを作成し, p.127 図 1, 2 のように
+    文字を出し入れするプログラムを作成してみよう.
+
+*/
+
 #include <stdio.h>
 #define N 10
 
@@ -29,7 +37,7 @@ void Push(char c)
     {
         Stack[Sp] = c;
         Sp++;
-        }
+    }
 }
 
 char Pop(void)
@@ -53,3 +61,12 @@ int DumpStack(void)
     printf("\n");
     return Sp;
 }
+
+/* 出力:
+
+    Sp: 3   0: A    1: B    2: C
+    Sp: 4   0: A    1: B    2: C    3: D
+    Pop Data = D
+    Sp: 3   0: A    1: B    2: C
+
+*/

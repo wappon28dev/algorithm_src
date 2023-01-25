@@ -1,3 +1,10 @@
+/*
+
+    練習問題:
+      例題1で, Push() や Pop() を main関数 に追加して, データが格納・取り出される順序を確認しなさい.
+
+*/
+
 #include <stdio.h>
 #define N 10
 
@@ -80,3 +87,32 @@ int DumpStack(void)
     printf("\n");
     return Sp;
 }
+
+/* out:
+
+    Sp: 0
+    Sp: 1   0: A
+    Sp: 2   0: A    1: B
+    Sp: 3   0: A    1: B    2: C
+    Sp: 4   0: A    1: B    2: C    3: D
+    Sp: 5   0: A    1: B    2: C    3: D    4: E
+    Sp: 6   0: A    1: B    2: C    3: D    4: E    5: F
+    Sp: 7   0: A    1: B    2: C    3: D    4: E    5: F    6: G
+    Sp: 8   0: A    1: B    2: C    3: D    4: E    5: F    6: G    7: H
+    Sp: 9   0: A    1: B    2: C    3: D    4: E    5: F    6: G    7: H    8: I
+    Sp: 10  0: A    1: B    2: C    3: D    4: E    5: F    6: G    7: H    8: I    9: J
+    Overflow
+    Sp: 10  0: A    1: B    2: C    3: D    4: E    5: F    6: G    7: H    8: I    9: J
+    Sp: 9   0: A    1: B    2: C    3: D    4: E    5: F    6: G    7: H    8: I
+    Sp: 8   0: A    1: B    2: C    3: D    4: E    5: F    6: G    7: H
+    Sp: 7   0: A    1: B    2: C    3: D    4: E    5: F    6: G
+    Sp: 6   0: A    1: B    2: C    3: D    4: E    5: F
+    Sp: 5   0: A    1: B    2: C    3: D    4: E
+    Sp: 4   0: A    1: B    2: C    3: D
+    Sp: 3   0: A    1: B    2: C
+    Sp: 2   0: A    1: B
+    Sp: 1   0: A
+    Sp: 0
+    Underflow
+
+*/

@@ -1,3 +1,22 @@
+/*
+
+    練習問題
+      例題1のプログラムを入力し, "blue" と "white" を探す場合の実行結果を確認しなさい.
+    また, Sequential() 関数の for 文の中に次の斜体部分を追加し, 表 1, 2 のトレース結果を確認しなさい.
+
+    ``` c
+    for (i = 0; i < n; i++)
+    {
+        printf("Word[%d]: %s\n", i, Word[i]); // <<< 追加
+        if (!strcmp(key, Word[i]))
+        {
+            return i;
+        }
+    }
+    ```
+
+*/
+
 #include <stdio.h>
 #include <string.h>
 #define LENGTH 8
@@ -48,3 +67,27 @@ int Sequential(char *key)
     }
     return -1;
 }
+
+/* 出力1:
+
+    blue
+    Word[0]: orange
+    Word[1]: green
+    Word[2]: blue
+    Hit : 2
+
+*/
+
+/* 出力2:
+
+    white
+    Word[0]: orange
+    Word[1]: green
+    Word[2]: blue
+    Word[3]: indigo
+    Word[4]: violet
+    Word[5]: red
+    Word[6]: yellow
+    Miss
+
+*/

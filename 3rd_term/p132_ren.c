@@ -1,3 +1,11 @@
+/*
+
+    練習問題:
+      例題2で, Enqueue() や Dequeue() を main関数 に追加して,
+    データが格納・取り出される順序を確認しなさい.
+
+*/
+
 #include <stdio.h>
 #define N 10
 
@@ -81,3 +89,13 @@ int DumpQueue(void)
     printf("\n");
     return Size;
 }
+
+/* 出力:
+
+    Head: 0, Tail: 4
+    0: A    1: B    2: C    3: D
+    Dequeue Data = A
+    Head: 1, Tail: 4
+    1: B    2: C    3: D
+
+*/

@@ -1,3 +1,11 @@
+/*
+
+    例題2: キューに文字を格納する
+      文字を格納できるキューを作成し, p.129 図 1, 2 のように
+    文字を出し入れするプログラムを作成してみよう.
+
+*/
+
 #include <stdio.h>
 #define N 10
 
@@ -81,3 +89,12 @@ int DumpQueue(void)
     printf("\n");
     return Size;
 }
+
+/* 出力:
+
+    0: A    1: B    2: C    3: D
+    Dequeue Data = A
+    Head: 1, Tail: 4
+    1: B    2: C    3: D
+
+*/

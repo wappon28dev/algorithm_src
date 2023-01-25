@@ -26,7 +26,7 @@ int main(void)
     result = Sequential(key);
     if (result != -1)
     {
-        printf("found \"%s\" at#%d\n", key, result);
+        printf("found \"%s\" at #%d\n", key, result);
     }
     else
     {
@@ -48,3 +48,10 @@ int Sequential(char *key)
     }
     return -1;
 }
+
+/* o—Í:
+
+    what word are you looking for => violet
+    found "violet" at #4
+
+*/

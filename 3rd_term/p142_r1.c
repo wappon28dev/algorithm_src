@@ -1,3 +1,12 @@
+/*
+
+    例題1: 線形探索による単語帳からの単語の検索
+      "orange", "green", "blue", "indigo", "violet", "red", "yellow" の順に
+    単語が登録された配列 (単語帳) から, 入力された単語を線形探索により探すプログラムで,
+    "blue" と "white" を探す場合について, i の値と Word[i] に格納された単語をトレースしてみよう.
+
+*/
+
 #include <stdio.h>
 #include <string.h>
 #define LENGTH 8
@@ -47,3 +56,17 @@ int Sequential(char *key)
     }
     return -1;
 }
+
+/* 出力1:
+
+    orange
+    Hit : 0
+
+*/
+
+/* 出力2:
+
+    white
+    Miss
+
+*/
