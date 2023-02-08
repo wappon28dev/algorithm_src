@@ -1,13 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 #define LENGTH 7
+
 void selectionSort(char *data[]);
 void swap(char *data[], int i, int j);
 void print(char *data[]);
 
 int main(void)
 {
-    char *data[LENGTH] = {"orange", "green", "blue", "indigo", "violet", "red", "yellow"};
+    char *data[LENGTH] = {
+        "orange",
+        "green",
+        "blue",
+        "indigo",
+        "violet",
+        "red",
+        "yellow",
+    };
 
     printf("origin: ");
     print(data);
