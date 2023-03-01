@@ -22,7 +22,7 @@ int main(void)
     int result;
 
     printf("what word are you looking for => ");
-    scanf("%s", &key);
+    scanf("%s", key);
     result = Sequential(key);
     if (result != -1)
     {

@@ -21,7 +21,7 @@ int main(void)
     int result;
 
     printf("Enter a word: ");
-    scanf("%s", &*key);
+    scanf("%s", key);
     result = Binary(key);
 
     if (result != -1)

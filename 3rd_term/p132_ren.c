@@ -22,6 +22,17 @@ int main(void)
     Enqueue('B');
     Enqueue('C');
     Enqueue('D');
+    Enqueue('E');
+    DumpQueue();
+    printf("Dequeue Data = %c\n", Dequeue());
+    DumpQueue();
+    printf("Dequeue Data = %c\n", Dequeue());
+    DumpQueue();
+    printf("Dequeue Data = %c\n", Dequeue());
+    DumpQueue();
+    printf("Dequeue Data = %c\n", Dequeue());
+    DumpQueue();
+    printf("Dequeue Data = %c\n", Dequeue());
     DumpQueue();
     printf("Dequeue Data = %c\n", Dequeue());
     DumpQueue();
@@ -92,10 +103,25 @@ int DumpQueue(void)
 
 /* èoóÕ:
 
-    Head: 0, Tail: 4
-    0: A    1: B    2: C    3: D
+    Head: 0, Tail: 5
+    0: A    1: B    2: C    3: D    4: E
     Dequeue Data = A
-    Head: 1, Tail: 4
-    1: B    2: C    3: D
+    Head: 1, Tail: 5
+    1: B    2: C    3: D    4: E
+    Dequeue Data = B
+    Head: 2, Tail: 5
+    2: C    3: D    4: E
+    Dequeue Data = C
+    Head: 3, Tail: 5
+    3: D    4: E
+    Dequeue Data = D
+    Head: 4, Tail: 5
+    4: E
+    Dequeue Data = E
+    Head: 5, Tail: 5
+
+    Queue Underflow
+    Dequeue Data =
+    Head: 5, Tail: 5
 
 */

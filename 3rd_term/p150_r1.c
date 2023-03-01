@@ -28,7 +28,7 @@ int main(void)
     char key[LENGTH];
     int kekka;
 
-    scanf("%s", &key);
+    scanf("%s", key);
     kekka = Binary(key);
 
     if (kekka != -1)

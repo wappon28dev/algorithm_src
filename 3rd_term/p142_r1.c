@@ -30,7 +30,7 @@ int main(void)
     char key[LENGTH];
     int kekka;
 
-    scanf("%s", &key);
+    scanf("%s", key);
     kekka = Sequential(key);
     if (kekka != -1)
     {
@@ -59,8 +59,8 @@ int Sequential(char *key)
 
 /* èoóÕ1:
 
-    orange
-    Hit : 0
+    blue
+    Hit : 2
 
 */
 
