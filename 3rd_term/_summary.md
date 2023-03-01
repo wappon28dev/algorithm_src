@@ -56,6 +56,11 @@
     - [☆ 教科書問題](#-教科書問題-5)
       - [選択法による数値の並び替え](#選択法による数値の並び替え)
       - [７章 章末問題](#７章-章末問題)
+  - [P.S.](#ps)
+    - [strcmp ってなんなのよ](#strcmp-ってなんなのよ)
+      - [書き方, 戻り値](#書き方-戻り値)
+      - [コードブロックの解説](#コードブロックの解説)
+    - [交換アルゴリズム](#交換アルゴリズム)
   - [ref](#ref)
 
 </div></details>
@@ -519,6 +524,81 @@
   node_6 --> node_7
   node_3 --"NO"--> node_6
   ```
+
+## P.S.
+
+### strcmp ってなんなのよ
+
+string(文字列) comparative(比較) ってことで, 文字列を比較する関数.  
+いや, どちらかというと引数に入れた２つの文字列の **文字コード上の** 大小を比較するよ.
+
+#### 書き方, 戻り値
+
+```c
+strcmp(char *s1, char *s2)
+```
+
+- `string.h` を include するのを忘れずに
+- 文字列を引数として渡す場合は, ポインタ参照の `*` をつけよう！
+
+文字コード上で,
+
+- `s1 < s2` -> `-1`
+- `s1 = s2` -> `0`
+- `s1 > s2` -> `1`
+
+が返ってくるよ！
+
+#### コードブロックの解説
+
+線形探索や二分探索で使ったであろう...  
+`key` と `word[i]` が同じ文字列なら, `i` を返すプログラム:  
+https://github.com/wappon-28-dev/algorithm_src/blob/7cac6936b12916abe5c56ca4172a9a9939aa93c2/3rd_term/p142_r1_mod.c#L39-L50
+
+1. まず `key` と `word[i]` はそれぞれ比較する文字列 (char) である.
+2. もし, key と word[i] が同じ文字列なら, `0` を返す.
+3. C 言語では, `0` は `false`, `1` は `true` となるので, `!` で真偽を反転させる
+
+ちょっとわけわけして考えると...
+
+```c
+int bIsEqual = strcmp(key, word[i]) == 0;
+
+if (bIsEqual) {
+  return i;
+}
+```
+
+のような書き方もできるよ. やったね！
+
+### 交換アルゴリズム
+
+交換法, 選択法 どちらでも, 値の入れ替えをするときがあるぞ.  
+そのときに使うであろう, 一時変数を使った値の入れ替えのアルゴリズムを紹介するぞ.
+
+https://github.com/wappon-28-dev/algorithm_src/blob/7cac6936b12916abe5c56ca4172a9a9939aa93c2/3rd_term/p160_r1.c#L44-L51
+
+まあ... そのままだ...  
+文字列でも数値でも渡せるのは良いとこだね
+
+(落書き)
+
+![](https://user-images.githubusercontent.com/86721991/222042778-1bd1a380-cda0-4f0b-b957-a94726a998a8.png)
+
+<details><summary>ポインタを渡すのもありだぞ</summary><div>
+
+```c
+void Swap(int data[], int i, int j)
+{
+    int temp;
+
+    temp = *data[i];
+    *data[i] = *data[j];
+    *data[j] = temp;
+}
+```
+
+</div></details>
 
 ## ref
 
