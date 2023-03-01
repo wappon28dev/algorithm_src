@@ -372,7 +372,7 @@
   flowchart TB
   node_1(["始め"])
   node_2[/"探索値 key\n データ data\n データ数 n"/]
-  node_3["middle = n / 2"]
+  node_3["low = 0\nhigh = n - 1"]
   node_4[/"ループ\nlow ≦ high の間"\]
   node_5["mid = (low + high) / 2"]
   node_6{"key #lt; data[mid]"}
@@ -511,7 +511,7 @@
   flowchart TB
   node_1(["始め"])
   node_4[/"ループ1\ni = n - 1 から 1\nまで繰り返し"\]
-  node_2[/"ループ2\nj = 1 から n \nまで繰り返し"\]
+  node_2[/"ループ2\nj = 1 から i \nまで繰り返し"\]
   node_3{"a[j - 1] #gt; a[j]"}
   node_5["a[j - 1] と a[j] の入れ替え"]
   node_6[\"ループ2\nj ← j + 1"/]
