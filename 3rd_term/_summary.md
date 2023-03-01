@@ -421,7 +421,7 @@
 
 **交換法 (bubble sort/exchange sort)** とは, 隣接するデータの大小を比較して, 逆順の場合に交換を繰り返して並び替えを行う手法である.
 
-![](https://user-images.githubusercontent.com/86721991/221938643-1a49155b-99be-4564-9b4a-98029d37bda9.png)
+![](https://user-images.githubusercontent.com/86721991/222122286-5d313063-efbd-495a-8cdd-c497c19b2ad6.png)
 
 ~~配列の後ろのほうから min or max が確定されるから, 正規の方法だと, 後ろから走査するんだけどね~~
 
@@ -556,7 +556,7 @@ strcmp(char *s1, char *s2)
 https://github.com/wappon-28-dev/algorithm_src/blob/7cac6936b12916abe5c56ca4172a9a9939aa93c2/3rd_term/p142_r1_mod.c#L39-L50
 
 1. まず `key` と `word[i]` はそれぞれ比較する文字列 (char) である.
-2. もし, key と word[i] が同じ文字列なら, `0` を返す.
+2. もし, `key` と `word[i]` が同じ文字列なら, `0` を返す.
 3. C 言語では, `0` は `false`, `1` は `true` となるので, `!` で真偽を反転させる
 
 ちょっとわけわけして考えると...
