@@ -53,3 +53,10 @@ int main(void)
 
     return 0;
 }
+
+/* o—Í:
+
+    what number are you looking for => 40
+    found "40" at #4
+
+*/

@@ -41,7 +41,7 @@ int main(void)
     char key[LENGTH];
     int kekka;
 
-    scanf("%s", &key);
+    scanf("%s", &*key);
     kekka = Binary(key);
 
     if (kekka != -1)
@@ -78,3 +78,23 @@ int Binary(char *key)
     }
     return -1;
 }
+
+/* èoóÕ:
+
+    blue
+    0 3 6 orange
+    0 1 2 green
+    0 0 0 blue
+    Hit : 0
+
+*/
+
+/* èoóÕ:
+
+    white
+    0 3 6 orange
+    4 5 6 violet
+    6 6 6 yellow
+    Miss
+
+*/

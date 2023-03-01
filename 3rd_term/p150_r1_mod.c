@@ -21,7 +21,7 @@ int main(void)
     int result;
 
     printf("Enter a word: ");
-    scanf("%s", &key);
+    scanf("%s", &*key);
     result = Binary(key);
 
     if (result != -1)
@@ -63,3 +63,17 @@ int Binary(char *key)
     }
     return -1;
 }
+
+/* o—Í1:
+
+    Enter a word: blue
+    Hit : 0
+
+*/
+
+/* o—Í2:
+
+    Enter a word: white
+    Miss
+
+*/

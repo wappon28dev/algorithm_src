@@ -67,3 +67,19 @@ int DumpStack(void)
     printf("\n");
     return Sp;
 }
+
+/* èoóÕ:
+
+    Sp: 0
+    Sp: 1   0: A
+    Sp: 2   0: A    1: B
+    Sp: 3   0: A    1: B    2: C
+    == Stack Overflow !! ==
+    Maximum Stack Size: 3
+    Sp: 3   0: A    1: B    2: C
+    Sp: 2   0: A    1: B
+    Sp: 1   0: A
+    Sp: 0
+    == Stack Underflow !! ==
+
+*/
